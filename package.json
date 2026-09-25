@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-brave-search",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Brave Search MCP — independent web index (no Google/Bing dependency)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-be2c1c196e2de89669fbba5f77ecacaeea7ed196a60d1f7a315a5067e1120d6b",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-f4c3778f1960561c436770e1b6791ff98e91ab8cb663f3aee7549ce6c1d5542a",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
