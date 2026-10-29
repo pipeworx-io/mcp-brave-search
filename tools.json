@@ -1,0 +1,83 @@
+[
+  {
+    "name": "web_search",
+    "description": "General web search via the Brave index. Returns title, URL, description snippet, age, language, and site categories. Optional country, language, safesearch, and freshness filters.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string",
+          "description": "Search query"
+        },
+        "count": {
+          "type": "number",
+          "description": "Results to return (1-20, default 10)"
+        },
+        "offset": {
+          "type": "number",
+          "description": "0-9 page offset (default 0)"
+        },
+        "country": {
+          "type": "string",
+          "description": "2-letter country code (e.g., \"us\", \"gb\")"
+        },
+        "search_lang": {
+          "type": "string",
+          "description": "2-letter language (e.g., \"en\")"
+        },
+        "safesearch": {
+          "type": "string",
+          "description": "strict | moderate | off (default moderate)",
+          "enum": [
+            "strict",
+            "moderate",
+            "off"
+          ]
+        },
+        "freshness": {
+          "type": "string",
+          "description": "pd (past day) | pw (past week) | pm (past month) | py (past year) | YYYY-MM-DDtoYYYY-MM-DD"
+        }
+      },
+      "required": [
+        "q"
+      ]
+    }
+  },
+  {
+    "name": "news_search",
+    "description": "News-specific search with publication metadata. Returns title, URL, source, age, snippet, and breaking-news flag.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "q": {
+          "type": "string",
+          "description": "Search query"
+        },
+        "count": {
+          "type": "number",
+          "description": "Results (1-20, default 10)"
+        },
+        "offset": {
+          "type": "number",
+          "description": "0-9 page offset"
+        },
+        "country": {
+          "type": "string",
+          "description": "2-letter country code"
+        },
+        "search_lang": {
+          "type": "string",
+          "description": "2-letter language"
+        },
+        "freshness": {
+          "type": "string",
+          "description": "pd | pw | pm | py"
+        }
+      },
+      "required": [
+        "q"
+      ]
+    }
+  }
+]

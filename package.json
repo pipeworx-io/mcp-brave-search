@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-brave-search",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Brave Search MCP — independent web index (no Google/Bing dependency)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-brave-search": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "brave-search"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-brave-search.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/brave-search",
   "pipeworx": {
-    "sourceHash": "v1-ba2ec6a7a0cfe3aeb9f666a3c61ebcded63a1e22396e305cf3ce372319e20cd3",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "brave-search",
+    "gatewaySlug": "brave-search",
+    "sourceHash": "v1-b0795427ef2fe6505817104bd14db92e247d83e8fed10b30f19b3d48fe06ed7f",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
