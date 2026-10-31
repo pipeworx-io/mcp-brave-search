@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-brave-search",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Brave Search MCP — independent web index (no Google/Bing dependency)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "brave-search",
     "gatewaySlug": "brave-search",
-    "sourceHash": "v1-b0795427ef2fe6505817104bd14db92e247d83e8fed10b30f19b3d48fe06ed7f",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-c9e997e5aaf12cc7a3d3601532f29a86924e8bab9be93df5431b86a383fb940c",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
